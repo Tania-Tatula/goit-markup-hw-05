@@ -137,6 +137,26 @@ p {
     color: var(--title-page-color);
 }
 
+
+.modal-botton{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--title-page-color);
+    border: 1px solid #000000;
+    }
+
+.modal-botton-icon {
+    width: 11px;
+    height: 11px;
+    fill: #000000;
+    
+}
+
+
  /* стилі для лого*/
  .logo {
     font-family: "Raleway", sans-serif;
@@ -344,10 +364,9 @@ address {
 .bg-color-dark-footer{
     background-color: var(--bg-dark-color); 
 }
+
 .bg-color-dark {
     min-height: 600px;
-    
-    
 }
 
 .footer-container {
@@ -368,7 +387,41 @@ address {
 
 }
 
+.backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    opacity: 1;
+    transition: all 0.3s;
+}
 
+.backdrop.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: 0;
+    transform: scale(0.5);
+}
+
+.is-hidden {
+    position: relative;
+}
+
+.modal {
+    position: absolute;
+    width: 100%;
+    max-width: 528px;
+    height: 581px;
+    top: 140px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: var(--title-page-color);
+    
+
+}
 
 
 /* геометрія сторінки */
@@ -554,6 +607,7 @@ address {
 
 /*додаэмо svg */
 .overlay {
+    position: relative;
     height: 600px;
     max-width: 1600px;
     margin-left: auto;
