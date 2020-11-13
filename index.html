@@ -18,7 +18,7 @@
                 <nav class="navigation">
                     <ul class="list menu">
                             <li class="menu-item"> 
-                                <a href="./index.html" class="link menu-link current">Студия</a>
+                                <a href="./index.html" class="link current menu-link">Студия</a>
                         </li>
                             <li class="menu-item"> 
                                 <a href="./portfolio.html" class="link menu-link ">Портфолио</a>
@@ -56,9 +56,15 @@
             <div class="overlay">
                 <div class="container hero-content">
                 <h1 class="page-title">Эффективные решения для вашего бизнеса</h1>
-                    <button class="btn btn-studia" type="button">
+                    <button class="btn btn-studia" type="button" data-modal-open>
                             Заказать услугу
                     </button>
+                    <div class="backdrop is-hidden" data-modal>
+                        <div class="modal">
+                            <p>Модальне вікно</p>
+                        </div>
+                        <button data-modal-close>Закрыть</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -339,6 +345,6 @@
         
     </footer>
 
-
+  <script src="./js/modal.js"></script>
   </body>
 </html>

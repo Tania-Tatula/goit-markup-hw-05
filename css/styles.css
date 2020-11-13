@@ -84,6 +84,11 @@ p {
     margin-bottom: 20px;
 }
 
+.link {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .link:hover,
 .link:focus { 
     color: var(--accent-color);
@@ -122,7 +127,10 @@ p {
     background-color:#F5F4FA;
     border: none;
     padding: 6px 22px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  }
+
 .btn-portfolio:hover,
 .btn-portfolio:focus {
     background-color: var(--accent-color);
@@ -176,6 +184,9 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: row-reverse;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-svg-linc:hover .header-svg-icon,
@@ -186,6 +197,21 @@ p {
 
 .current {
     color: var(--accent-color);
+}
+
+.current::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--accent-color);
+    margin-top: 28px;
+
+}
+
+li > .current {
+    padding-bottom: 0;
 }
 
 .contacts {
@@ -348,9 +374,10 @@ address {
 /* геометрія сторінки */
 .menu {
     display: flex;
-
-
+    align-items: center;
 }
+
+
 
 .menu-item:not(:last-child) {
     margin-right: 50px;
@@ -359,8 +386,6 @@ address {
 .header-container {
     display: flex;
     align-items: center;
-    
-    
 }
 
 .heder-logo {
@@ -432,6 +457,9 @@ address {
     height: 90px;
     width: 170px;
     background-color: inherit;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -468,6 +496,9 @@ address {
 
 .prt-box {
     border: 1px solid rgba(238,238,238,1);
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .prt-box:hover,
@@ -593,12 +624,18 @@ background-image: url(../images/antenna-1.svg);
     width: 44px;
     background-color: inherit;
     border-radius: 50%;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon-svg {
-     width: 20px;
-     height: 20px;
-     fill: #AFB1B8;
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icons-linc:hover .social-icon-svg,
